@@ -84,7 +84,6 @@ function button_callback() {
                 // first eye
                 r = dets[i][0] - 0.075 * dets[i][2];
                 c = dets[i][1] - 0.175 * dets[i][2];
-                const rightRow = r
                 const rightColumn = c
                 //console.log("right (yellow) eye", rightRow, rightColumn) /* origin: top left. r: row, c: column*/
                 s = 0.35 * dets[i][2];
@@ -99,7 +98,6 @@ function button_callback() {
                 // second eye
                 r = dets[i][0] - 0.075 * dets[i][2];
                 c = dets[i][1] + 0.175 * dets[i][2];
-                const leftRow = r
                 const leftColumn = c
                 //console.log("left (red) eye", leftRow, leftColumn) /* origin: top left. r: row, c: column*/
 
@@ -114,7 +112,7 @@ function button_callback() {
                 }
                 var seperation = leftColumn - rightColumn;
                 var roundedSeperation = seperation.toFixed(0);
-                document.getElementById("xdifference").innerHTML = ("x difference:", roundedSeperation);
+                document.getElementById("pupilDifference").innerHTML = ("x difference:", roundedSeperation);
             }
     }
     /*

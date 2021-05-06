@@ -23,7 +23,9 @@ video.addEventListener('play', () => {
         const leftEye = landmarks.getLeftEye()
         const rightEye = landmarks.getRightEye()
         console.log(leftEye)
-
+        var landmarkSeperation = leftEye[0]._x - rightEye[0]._x;
+        var roundedLandmarkSeperation = landmarkSeperation.toFixed(0);
+        document.getElementById("eyeLandmarkDifference").innerHTML = ("x difference:", roundedLandmarkSeperation);
         const resizedDetections = faceapi.resizeResults(detections, displaySize)
         canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height)
         faceapi.draw.drawDetections(canvas, resizedDetections)
