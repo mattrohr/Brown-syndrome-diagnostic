@@ -30,23 +30,30 @@
 <body>
 
 	<div>
-		<label>pupil separation [pixels]: <label id="pupilDifference"></label></label> ± 5
-		<p><label>landmark separation [pixels]: <label id="eyeLandmarkDifference"></label></label> ± ???</p>
+		<label>pupil separation [pixels]: <label id="pupilDifference"></label></label> ± 2
+		<p><label>landmark separation [pixels]: <label id="eyeLandmarkDifference"></label></label> ± 20</p>
+		<div id="outputDiv"></div>
 	</div>
 	<hr>
 	<section>
 		<h3>Brown's Syndrome diagnostic</h3>
-		<p>Click button below to begin pupil tracking. Works best without glasses and with desktop Chrome. Images are not saved and not sent to a server.</p>
+		<p>After landmarks populate, click button below to begin pupil tracking. Works best without glasses and with desktop Chrome. Images are not saved and not sent to a server.</p>
 		<p>For Investigational Use Only. The performance characteristics of this product have not been established.</p>
 		<p> <a href="https://github.com/mattrohr/Browns-syndrome-diagnostic">This project is open source.</a>. Pupil location is compared to facial landmarks to determine unilateral deviation. Based on <a href="https://github.com/tensorflow/tfjs">Tensorflow.js</a>, <a href="https://github.com/justadudewhohacks/face-api.js">face-api.js by Vincent Mühler</a>, <a href="https://github.com/nenadmarkus/picojs">picojs by Nenad Markuš</a>, and <a href="https://github.com/cbrandolino/camvas">camvas by Claudio Brandolino</a>.</p>
 	</section>
 	<hr>
 	<p><input type="button" value="Begin pupil tracking" onclick="button_callback()"></p>
+	
 	<video id="video" width="640" height="480" muted playsinline autoplay></video>
 	<script src="locate-landmarks.js"></script>
 	
 	<canvas width=640 height=480></canvas>
 
+	</canvas>
+	<script src="plot.js"></script>
+
+	
+	
 	</div>
 </body>
 

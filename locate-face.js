@@ -1,4 +1,3 @@
-/* This library is released under the MIT license, see https://github.com/nenadmarkus/picojs */
 pico = {}
 
 pico.unpack_cascade = function(bytes)

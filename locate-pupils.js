@@ -1,4 +1,3 @@
-/* This library is released under the MIT license, see https://github.com/nenadmarkus/picojs */
 lploc = {}
 
 lploc.unpack_localizer = function(bytes)
@@ -48,7 +47,7 @@ lploc.unpack_localizer = function(bytes)
 	const tcodes = new Int8Array(tcodes_ls);
 	const tpreds = new Float32Array(tpreds_ls);
 	/*
-		construct the location estimaton function
+		construct the location estimation function
 	*/
 	function loc_fun(r, c, s, pixels, nrows, ncols, ldim)
 	{
