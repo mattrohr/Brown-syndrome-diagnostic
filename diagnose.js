@@ -7,11 +7,11 @@ function button_callback() {
     if (initialized)
         return; // if yes, then do not initialize everything again
     /*
-        (1) initialize the pico.js face detector
+        (1) initialize the locate-face.js face detector
     */
-    var update_memory = pico.instantiate_detection_memory(5); // we will use the detecions of the last 5 frames
+    var update_memory = pico.instantiate_detection_memory(5); // we will use the detections of the last 5 frames
     var facefinder_classify_region = function(r, c, s, pixels, ldim) { return -1.0; };
-    var cascadeurl = 'https://raw.githubusercontent.com/nenadmarkus/pico/c2e81f9d23cc11d1a612fd21e4f9de0921a5d0d9/rnt/cascades/facefinder';
+    var cascadeurl = './facefinder';
     fetch(cascadeurl).then(function(response) {
         response.arrayBuffer().then(function(buffer) {
             var bytes = new Int8Array(buffer);
@@ -20,10 +20,10 @@ function button_callback() {
         })
     })
     /*
-        (2) initialize the lploc.js library with a pupil localizer
+        (2) initialize the locate-pupils.js library with a pupil localizer
     */
     var do_puploc = function(r, c, s, nperturbs, pixels, nrows, ncols, ldim) { return [-1.0, -1.0]; };
-    var puplocurl = 'https://drone.nenadmarkus.com/data/blog-stuff/puploc.bin'
+    var puplocurl = './puploc.bin'
     fetch(puplocurl).then(function(response) {
         response.arrayBuffer().then(function(buffer) {
             var bytes = new Int8Array(buffer);
@@ -72,6 +72,8 @@ function button_callback() {
         dets = pico.cluster_detections(dets, 0.2); // set IoU threshold to 0.2
         // draw detections
         
+        var abc;
+        
         for (i = 0; i < dets.length; ++i)
             // check the detection score
             // if it's above the threshold, draw it
@@ -85,7 +87,6 @@ function button_callback() {
                 r = dets[i][0] - 0.075 * dets[i][2];
                 c = dets[i][1] - 0.175 * dets[i][2];
                 const rightColumn = c
-                //console.log("right (yellow) eye", rightRow, rightColumn) /* origin: top left. r: row, c: column*/
                 s = 0.35 * dets[i][2];
                 [r, c] = do_puploc(r, c, s, 63, image)
                 if (r >= 0 && c >= 0) {
@@ -98,8 +99,7 @@ function button_callback() {
                 // second eye
                 r = dets[i][0] - 0.075 * dets[i][2];
                 c = dets[i][1] + 0.175 * dets[i][2];
-                const leftColumn = c
-                //console.log("left (red) eye", leftRow, leftColumn) /* origin: top left. r: row, c: column*/
+                var leftColumn = c
 
                 s = 0.35 * dets[i][2];
                 [r, c] = do_puploc(r, c, s, 63, image)
@@ -112,7 +112,7 @@ function button_callback() {
                 }
                 var seperation = leftColumn - rightColumn;
                 var roundedSeperation = seperation.toFixed(0);
-                document.getElementById("pupilDifference").innerHTML = ("x difference:", roundedSeperation);
+                document.getElementById("pupilDifference").innerHTML = ("pupil difference:", roundedSeperation);
             }
     }
     /*

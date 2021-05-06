@@ -16,16 +16,19 @@ video.addEventListener('play', () => {
     const displaySize = { width: video.width, height: video.height }
     faceapi.matchDimensions(canvas, displaySize)
     setInterval(async () => {
-        const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks();
+        const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks().withFaceDescriptors();
         
         const landmarks = await faceapi.detectFaceLandmarks(video)
         const landmarkPositions = landmarks.positions
         const leftEye = landmarks.getLeftEye()
         const rightEye = landmarks.getRightEye()
-        console.log(leftEye)
-        var landmarkSeperation = leftEye[0]._x - rightEye[0]._x;
-        var roundedLandmarkSeperation = landmarkSeperation.toFixed(0);
-        document.getElementById("eyeLandmarkDifference").innerHTML = ("x difference:", roundedLandmarkSeperation);
+        console.log("left eye:", leftEye[0])
+        console.log("right eye:", rightEye[0])
+        
+        var distanceBetweenLandmarks = Math.sqrt(Math.pow(rightEye[0]._x - leftEye[5]._x, 2) + Math.pow(rightEye[0]._y - leftEye[5]._y, 2))
+        var roundedDistanceBetweenLandmarks = distanceBetweenLandmarks.toFixed(0);
+        document.getElementById("eyeLandmarkDifference").innerHTML = ("difference:", roundedDistanceBetweenLandmarks);
+
         const resizedDetections = faceapi.resizeResults(detections, displaySize)
         canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height)
         faceapi.draw.drawDetections(canvas, resizedDetections)
