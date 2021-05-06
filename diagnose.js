@@ -47,6 +47,7 @@ function button_callback() {
     /*
         (4) this function is called each time a video frame becomes available
     */
+    var blank = []
     var processfn = function(video, dt) {
         // render the video frame to the canvas element and extract RGBA pixel data
         ctx.drawImage(video, 0, 0);
@@ -72,7 +73,6 @@ function button_callback() {
         dets = pico.cluster_detections(dets, 0.2); // set IoU threshold to 0.2
         // draw detections
         
-        var abc;
         
         for (i = 0; i < dets.length; ++i)
             // check the detection score
@@ -110,9 +110,17 @@ function button_callback() {
                     ctx.strokeStyle = 'red';
                     ctx.stroke();
                 }
-                var seperation = leftColumn - rightColumn;
-                var roundedSeperation = seperation.toFixed(0);
-                document.getElementById("pupilDifference").innerHTML = ("pupil difference:", roundedSeperation);
+                var separation = leftColumn - rightColumn;
+                var roundedSeparation = [separation.toFixed(0)];
+                document.getElementById("pupilDifference").innerHTML = ("pupil difference:", roundedSeparation);
+                blank = blank + ", " + roundedSeparation;
+                
+                //console.log([blank][0])
+                //console.log(Math.max([blank][0]))
+                var splitRoundeddSeparation = blank.split(", ");
+                maxRoundeddSeparation = Math.max(...splitRoundeddSeparation);
+                document.getElementById("maxPupilDifference").innerHTML = maxRoundeddSeparation;
+                
             }
     }
     /*

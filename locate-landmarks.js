@@ -22,8 +22,8 @@ video.addEventListener('play', () => {
         const landmarkPositions = landmarks.positions
         const leftEye = landmarks.getLeftEye()
         const rightEye = landmarks.getRightEye()
-        console.log("left eye:", leftEye[0])
-        console.log("right eye:", rightEye[0])
+        //console.log("left eye:", leftEye[0])
+        //console.log("right eye:", rightEye[0])
         
         var distanceBetweenLandmarks = Math.sqrt(Math.pow(rightEye[0]._x - leftEye[5]._x, 2) + Math.pow(rightEye[0]._y - leftEye[5]._y, 2))
         var roundedDistanceBetweenLandmarks = distanceBetweenLandmarks.toFixed(0);
