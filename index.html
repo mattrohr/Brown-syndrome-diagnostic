@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<title>Using pico.js and lploc.js for real-time localization of eye pupils</title>
+	<script src="face-api.min.js"></script>
+	<script src="locate-face.js"></script>
+	<script src="create-canvas.js"></script>
+	<script src="locate-pupils.js"></script>
+	<script src="diagnose.js"></script>
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">-->
+</head>
+<style>
+	body {
+		/* dark background to remove glasses glare */
+		background-color: rgb(31, 33, 35);
+		color: white;
+	}
+
+	canvas {
+		position: fixed;
+		
+</style>
+<script>
+</script>
+
+<body>
+
+	<div>
+		<label>pupil seperation [pixels]: <label id="xdifference"></label></label> ± 5
+	</div>
+	</div>
+	<hr>
+	<section>
+		<h3>Using pico.js and lploc.js for real-time localization of eye pupils</h3>
+		<p>Click the button below and allow the page to access your webcam.</p>
+	</section>
+	<hr>
+	<p><input type="button" value="Start webcam feed" onclick="button_callback()"></p>
+	<video id="video" width="640" height="480" muted playsinline autoplay></video>
+	<script src="locate-landmarks.js"></script>
+	<canvas width=640 height=480></canvas>
+
+	</div>
+</body>
+
+</html>
