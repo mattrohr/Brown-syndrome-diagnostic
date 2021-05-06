@@ -30,8 +30,8 @@
 <body>
 
 	<div>
-		<label>pupil separation [pixels]: <label id="pupilDifference"></label></label> ± 2
-		<p><label>landmark separation [pixels]: <label id="eyeLandmarkDifference"></label></label> ± 20</p>
+		<label>pupil separation [pixels]: <label id="pupilDifference"></label></label> ± 3 (assumes pupils are detected)
+		<p><label>landmark separation [pixels]: <label id="eyeLandmarkDifference"></label></label> ± 4 (assumes landmarks are detected and fixed)</p>
 		<div id="outputDiv"></div>
 	</div>
 	<hr>
@@ -44,7 +44,7 @@
 	<hr>
 	<p><input type="button" value="Begin pupil tracking" onclick="button_callback()"></p>
 	
-	<video id="video" width="640" height="480" muted playsinline autoplay></video>
+	<video id="video" muted playsinline autoplay></video>
 	<script src="locate-landmarks.js"></script>
 	
 	<canvas width=640 height=480></canvas>
