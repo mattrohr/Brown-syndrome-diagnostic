@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2021 Matt Rohr, Tensorflow.js team and Vincent Mühler (for most of face-api.min.js), Davis King (for models/),Nenad Markuš (for most of locate-pupils.js, locate-face.js, diagnose.js), Claudio Brandolino (for create-canvas.js).
+Copyright (c) 2021 Matt Rohr, Tensorflow.js team and Vincent Mühler (for most of face-api.min.js), Davis King (for models/), Nenad Markuš (for most of locate-pupils.js, locate-face.js, diagnose.js), Claudio Brandolino (for create-canvas.js).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
