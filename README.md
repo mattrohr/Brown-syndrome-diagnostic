@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/mattrohr/INSERT PROJECT URL/actions?query=workflow%3Abuild">
+<a href="https://github.com/mattrohr/Browns-Syndrome-diagnostic/deployments/activity_log?environment=github-pages">
 <img src="https://github.com/mattrohr/INSERT PROJECT URL/workflows/build/badge.svg?branch=main" alt="Build Status Badge">
 </a>
 </p>
@@ -31,7 +31,16 @@
 3.
 
 ## Notes
-- Observations about the quality of the project
+- Problems:
+    - Convert pixels to distance with fiducial
+    - Landmark separation displayed even when
+    - Violet method for facial features (since it's much faster than face-api). Or Tensorflow.js facial landmark example (seems similar in speed though). If they're the same speed, measurement can be passive. User can play a game or minimize and return.
+    - Where does this fit in the diagnostic pipeline? It may be good at detecting subtle symptoms. What tool do doctors use now to measure? May be best to add a step to analyze images in the background, and suggest they see a doctor when something is anomalous. Rare disesases, triage, emergency (time-limited) decisions, rural, user-facing. Seems we need an amazon for diagnostics, like IBM Watson
+    - eye detection is ~3x faster than landmarks. But how fast exactly?
+    - multi-face support 
+    -  You can ensure pupils are tracked as you look away by recording your screen. You may also present pictures from your mobile device (e.g. <a href="https://www.google.com/search?q=brown+syndrome&client=safari&rls=en&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi6gIiZmazwAhWXQs0KHW-PAf4Q_AUoAXoECAEQAw&biw=1536&bih=880">search images</a>). 
+    - how to test accuracy for rare disease? Scrap images of people --> 
+Observations about the quality of the project
 ```this code can use some refactoring
 did a quick implementation to get this to work but ABC would be better.
 ```
