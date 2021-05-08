@@ -39,9 +39,12 @@
 	</section>
 	<hr>
 	<div>
-		<label>pupil separation [pixels]: <label id="pupilDifference"></label></label> ± 3
-		<p><label>landmark separation [pixels]: <label id="eyeLandmarkDifference"></label></label> ± 4</p>
-		<p><label>max pupil separation [pixels]: <label id="maxPupilDifference"></label></label> ± ??</p>
+		<p>landmark separation [pixels]: <label id="eyeLandmarkDifference"></label> ± 4</p>
+		<!--<p>max head movement [pixels]: <label id="headDeviation"></label> ± ??? (if over 4, please refresh page to restart diagnostic)</p>-->
+		
+		<label>pupil separation [pixels]: <label id="pupilDifference"></label> ± 3
+		<p>max pupil deviation [pixels]: <label id="pupilDeviation"></label> ± ??? (if head movement is equal or under 4, and this deviation is over 3, abnormal unilateral deviation detected)</p>
+
 	</div>
 
 	<video id="video" width="640" height="480" muted playsinline autoplay></video>

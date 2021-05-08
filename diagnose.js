@@ -117,10 +117,14 @@ function button_callback() {
                 
                 //console.log([blank][0])
                 //console.log(Math.max([blank][0]))
-                var splitRoundeddSeparation = blank.split(", ");
-                maxRoundeddSeparation = Math.max(...splitRoundeddSeparation);
-                document.getElementById("maxPupilDifference").innerHTML = maxRoundeddSeparation;
+                var splitRoundedSeparation = blank.split(", ");
+                maxRoundedSeparation = Math.max(...splitRoundedSeparation);
+                //document.getElementById("maxPupilDifference").innerHTML = maxRoundedSeparation;
                 
+                // Extract second element of separation array. First element is empty because blank = [], and we append to it.
+                var pupilDeviation = Math.abs(splitRoundedSeparation[1] - maxRoundedSeparation);
+                document.getElementById("pupilDeviation").innerHTML = pupilDeviation;
+                // subtract current separation from extracted value to determine if it varies
             }
     }
     /*
