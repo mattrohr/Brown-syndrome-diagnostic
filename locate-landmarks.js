@@ -12,6 +12,7 @@ function startVideo() {
 
 var blankTwo = []
 var blankThree = []
+var blankFour = []
 
 video.addEventListener('play', () => {
     const canvas = faceapi.createCanvasFromMedia(video)
@@ -70,10 +71,13 @@ video.addEventListener('play', () => {
         
         var headDeviation = Math.sqrt(Math.pow(splitRightEyeXPosition[splitRightEyeXPosition.length - 1] - splitRightEyeXPosition[1], 2) + Math.pow(splitRightEyeYPosition[splitRightEyeYPosition.length - 1] - splitRightEyeYPosition[1], 2))
         
-        roundedHeadDeviation = headDeviation.toFixed(0)
+        var roundedHeadDeviation = headDeviation.toFixed(0)
+        blankFour = blankFour + ", " + roundedHeadDeviation;
+        var splitRoundedHeadDeviation = blankFour.split(", ");
+        var maxHeadDeviation = Math.max(...splitRoundedHeadDeviation)
         
         document.getElementById("currentHeadDeviation").innerHTML = roundedHeadDeviation;        
-        //document.getElementById("maxHeadDeviation").innerHTML = maxHeadDeviation; 
+        document.getElementById("maxHeadDeviation").innerHTML = maxHeadDeviation; 
         
         console.log(headDeviation)
         
