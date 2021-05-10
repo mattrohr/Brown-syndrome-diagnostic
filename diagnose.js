@@ -113,17 +113,13 @@ function button_callback() {
                 var separation = leftColumn - rightColumn;
                 var roundedSeparation = [separation.toFixed(0)];
                 document.getElementById("pupilDifference").innerHTML = ("pupil difference:", roundedSeparation);
-                blank = blank + ", " + roundedSeparation;
-                
-                //console.log([blank][0])
-                //console.log(Math.max([blank][0]))
-                var splitRoundedSeparation = blank.split(", ");
-                maxRoundedSeparation = Math.max(...splitRoundedSeparation);
-                //document.getElementById("maxPupilDifference").innerHTML = maxRoundedSeparation;
-                
+                blank = blank + ", " + separation;
+                var splitSeparation = blank.split(", ");
+                maxSeparation = Math.max(...splitSeparation);
                 // Extract second element of separation array. First element is empty because blank = [], and we append to it.
-                var pupilDeviation = Math.abs(splitRoundedSeparation[1] - maxRoundedSeparation);
-                document.getElementById("pupilDeviation").innerHTML = pupilDeviation;
+                var pupilDeviation = Math.abs(splitSeparation[1] - maxSeparation);
+                var roundedPupilSeparation = [pupilDeviation.toFixed(0)];
+                document.getElementById("roundedPupilSeparation").innerHTML = roundedPupilSeparation;
                 // subtract current separation from extracted value to determine if it varies
             }
     }

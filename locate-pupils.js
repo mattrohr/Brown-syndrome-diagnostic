@@ -95,7 +95,7 @@ lploc.unpack_localizer = function(bytes)
 
 		for(let i=0; i<nperturbs; ++i)
 		{
-			const _s = s*(0.925 + 0.15*Math.random());
+			const _s = s*(0.925 + 0.15 *Math.random());
 			let _r = r + s*0.15*(0.5 - Math.random());
 			let _c = c + s*0.15*(0.5 - Math.random());
 
