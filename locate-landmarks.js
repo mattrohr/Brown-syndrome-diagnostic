@@ -70,7 +70,9 @@ video.addEventListener('play', () => {
         
         var headDeviation = Math.sqrt(Math.pow(splitRightEyeXPosition[splitRightEyeXPosition.length - 1] - splitRightEyeXPosition[1], 2) + Math.pow(splitRightEyeYPosition[splitRightEyeYPosition.length - 1] - splitRightEyeYPosition[1], 2))
         
-        document.getElementById("currentHeadDeviation").innerHTML = headDeviation;        
+        roundedHeadDeviation = headDeviation.toFixed(0)
+        
+        document.getElementById("currentHeadDeviation").innerHTML = roundedHeadDeviation;        
         //document.getElementById("maxHeadDeviation").innerHTML = maxHeadDeviation; 
         
         console.log(headDeviation)
