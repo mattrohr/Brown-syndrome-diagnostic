@@ -9,8 +9,8 @@
 <p align="center">
 
 <p align="center">
-<a href="https://github.com/mattrohr/Browns-syndrome-diagnostic/actions?query=workflow%3Abuild">
-<img src="https://github.com/mattrohr/Browns-syndrome-diagnostic/workflows/build/badge.svg?branch=main" alt="Build Status Badge">
+<a href="https://eye.mattrohr.com">
+<img src="https://img.shields.io/github/deployments/mattrohr/Browns-syndrome-diagnostic/github-pages?label=build" alt="Build Status Badge">
 
 </p>
 
