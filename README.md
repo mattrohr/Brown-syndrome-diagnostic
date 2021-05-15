@@ -7,9 +7,11 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/mattrohr/Browns-Syndrome-diagnostic/deployments/activity_log?environment=github-pages">
-<img src="https://github.com/mattrohr/INSERT PROJECT URL/workflows/build/badge.svg?branch=main" alt="Build Status Badge">
-</a>
+
+<p align="center">
+<a href="https://github.com/mattrohr/Browns-syndrome-diagnostic/actions?query=workflow%3Abuild">
+<img src="https://github.com/mattrohr/Browns-syndrome-diagnostic/workflows/build/badge.svg?branch=main" alt="Build Status Badge">
+
 </p>
 
 ## About

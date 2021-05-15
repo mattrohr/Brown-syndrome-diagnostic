@@ -1,0 +1,12 @@
+# .github/workflows/example_workflow.yml
+name: Successful Deploy Action Example
+on: deployment_status
+jobs:
+  build:
+    if: github.event.deployment_status.state == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: XYZ
+        run: npm run xyz
+        env:
+          DEPLOY_URL: ${{ github.event.deployment_status.target_url }}
