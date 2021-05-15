@@ -10,7 +10,7 @@
 
 <p align="center">
 <a href="https://eye.mattrohr.com">
-<img src="https://img.shields.io/github/deployments/mattrohr/Browns-syndrome-diagnostic/github-pages?label=build" alt="Build Status Badge">
+<img src="https://img.shields.io/github/deployments/mattrohr/Browns-syndrome-diagnostic/github-pages?label=deploy" alt="Deploy Status Badge">
 
 </p>
 
