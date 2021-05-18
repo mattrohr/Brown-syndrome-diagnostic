@@ -17,9 +17,9 @@
 ## About
 ⚠️ For Investigational Use Only. The performance characteristics of this product have not been established. ⚠️
 
-If inflamation causes eye tendons to tighten or loosen, gaze will be uncontrollable. This is called Brown's syndrome, and often afflicts only one eye. If the distance between pupils varies, it's likely the individual is afflicted with this condition.
+If inflammation causes eye tendons to tighten or loosen, gaze will be uncontrollable. This is called Brown's syndrome, and often afflicts only one eye.
 
-Current diagnostic methods are manual and prone to error, require a specialist. Also, because this is a rare condition, measurement methodology is not standardized and varies between ophthalmologists.
+Diagnosis requires a specialist. Because this is a rare condition, measurement methodology is manual, not standardized, and varies between ophthalmologists. Therefore, it is prone to error.
 
 This repository includes browser-based software to detect deviation in one eye. It compares pupil location across their full range of motion. But if the head moves during measurement, that may be detected as pupil deviation. Therefore current facial detection projects are inadequate, because they may detect pupils or faces, but not both.
 
