@@ -28,7 +28,7 @@ ruby -run -e httpd . -p "${1:-8080}"
 open -a "Google Chrome" http://localhost:8080
 ```
 
-3. Demo should look like xxx. Follow on-screen instructions.
+3. Follow on-screen instructions. Demo should look like xxx.
 
 ## Notes
 - Problems:
