@@ -11,14 +11,14 @@
 
 If inflammation causes eye tendons to tighten or loosen, gaze will be uncontrollable. This is called Brown's syndrome, and often afflicts only one eye.
 
-Diagnosis requires a specialist. Because this is a rare condition, measurement methodology is manual, not standardized, and varies between ophthalmologists. Therefore, it is prone to error.
+Diagnosis requires a specialist. Because this is a rare condition, measurement methodology is not standardized, varies between ophthalmologists, and is manual. Therefore, it is prone to error.
 
 This repository includes browser-based software to measure deviation in one eye. It compares pupil location across their full range of motion. But if the head moves during measurement, that may be detected as pupil deviation. Therefore current facial detection projects are inadequate, because they may detect pupils or faces, but not both.
 
-[Live Demo](eye.mattrohr.com)
+[Live Demo](https://eye.mattrohr.com)
 
 ## Setup
-1. Serve current directory:
+1. Serve current directory on localhost:
 ```bash
 ruby -run -e httpd . -p "${1:-8080}"
 ```
@@ -28,14 +28,17 @@ ruby -run -e httpd . -p "${1:-8080}"
 open -a "Google Chrome" http://localhost:8080
 ```
 
-3. Follow on-screen instructions. Demo should look like xxx.
+3. Follow on-screen instructions. Demo should look like animation above.
 
 ## Notes
+- Design Considerations
+    - Language selection: JavaScript ???
+    - Method 
 - Problems:
     - Convert pixels to distance with fiducial
     - Landmark separation displayed even when
     - Violet method for facial features (since it's much faster than face-api). Or Tensorflow.js facial landmark example (seems similar in speed though). If they're the same speed, measurement can be passive. User can play a game or minimize and return.
-    - Where does this fit in the diagnostic pipeline? It may be good at detecting subtle symptoms. What tool do doctors use now to measure? May be best to add a step to analyze images in the background, and suggest they see a doctor when something is anomalous. Rare disesases, triage, emergency (time-limited) decisions, rural, user-facing. Seems we need an amazon for diagnostics, like IBM Watson
+    - Where does this fit in the diagnostic pipeline? It may be good at detecting subtle symptoms. What tool do doctors use now to measure? May be best to add a step to analyze images in the background, and suggest they see a doctor when something is anomalous. Rare diseases, triage, emergency (time-limited) decisions, rural, user-facing. Seems we need an amazon for diagnostics, like IBM Watson
     - eye detection is ~3x faster than landmarks. But how fast exactly?
     - multi-face support 
     -  You can ensure pupils are tracked as you look away by recording your screen. You may also present pictures from your mobile device (e.g. <a href="https://www.google.com/search?q=brown+syndrome&client=safari&rls=en&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi6gIiZmazwAhWXQs0KHW-PAf4Q_AUoAXoECAEQAw&biw=1536&bih=880">search images</a>). 
