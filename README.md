@@ -1,17 +1,9 @@
 <p align="center">
-<img width="75%" src="https://i.imgur.com/INSERT URL.png" alt="Banner">
-</p>
-
-<p align="center">
 <b>Detect asynchronous eye movement</b>
 </p>
 
 <p align="center">
-
-<p align="center">
-<a href="https://eye.mattrohr.com">
-<img src="https://img.shields.io/github/deployments/mattrohr/Browns-syndrome-diagnostic/github-pages?label=deploy" alt="Deploy Status Badge">
-
+<a href="https://eye.mattrohr.com"><img src="https://img.shields.io/github/deployments/mattrohr/Browns-syndrome-diagnostic/github-pages?label=deploy" alt="Deploy Status Badge"></a>
 </p>
 
 ## About
@@ -23,10 +15,7 @@ Diagnosis requires a specialist. Because this is a rare condition, measurement m
 
 This repository includes browser-based software to measure deviation in one eye. It compares pupil location across their full range of motion. But if the head moves during measurement, that may be detected as pupil deviation. Therefore current facial detection projects are inadequate, because they may detect pupils or faces, but not both.
 
-Live demo:
-[eye.mattrohr.com](eye.mattrohr.com)
-
-<img align="right" width="40%" src="" alt="Animation">
+[Live Demo](eye.mattrohr.com)
 
 ## Setup
 1. Serve current directory:
