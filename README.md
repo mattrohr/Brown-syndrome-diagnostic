@@ -23,8 +23,6 @@ Current diagnostic methods are manual and prone to error, require a specialist. 
 
 This tool automates the diagnostic process. It compares pupil location across their full range of motion. But if the head moves during measurement, that may be detected as pupil deviation. Therefore current facial detection projects are inadequate, because they may detect pupils or faces, but not both.
 
-Since only one eye is afflicted in 90% of cases, a reasonable diagnostic method would measure eye deviation would measure one diagnostic approach is to measure eye deviation. 
-
 This repository includes browser-based software to detect deviation in one eye. 
 
 <img align="right" width="40%" src="" alt="Animation">
