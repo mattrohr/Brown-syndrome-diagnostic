@@ -21,9 +21,7 @@ If eye tendons tighten or loosen, gaze will be uncontrollable. This is called Br
 
 Current diagnostic methods are manual and prone to error, require a specialist. Also, because this is a rare condition, measurement methodology is not standardized and varies between ophthalmologists.
 
-This tool automates the diagnostic process. It compares pupil location across their full range of motion. But if the head moves during measurement, that may be detected as pupil deviation. Therefore current facial detection projects are inadequate, because they may detect pupils or faces, but not both.
-
-This repository includes browser-based software to detect deviation in one eye. 
+This repository includes browser-based software to detect deviation in one eye. It compares pupil location across their full range of motion. But if the head moves during measurement, that may be detected as pupil deviation. Therefore current facial detection projects are inadequate, because they may detect pupils or faces, but not both.
 
 <img align="right" width="40%" src="" alt="Animation">
 
