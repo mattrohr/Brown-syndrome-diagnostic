@@ -15,7 +15,7 @@ Diagnosis requires a specialist. Because this is a rare condition, measurement m
 
 This repository includes browser-based software to measure deviation in one eye. It compares pupil location across their full range of motion. But if the head moves during measurement, that may be detected as pupil deviation. Therefore current facial detection projects are inadequate, because they may detect pupils or faces, but not both.
 
-[Live Demo](https://eye.mattrohr.com)
+[Live Demo](https://eye.mattrohr.com) (use desktop Chrome)
 
 ## Setup
 1. Serve current directory on localhost:
