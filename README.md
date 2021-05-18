@@ -21,7 +21,7 @@ If inflammation causes eye tendons to tighten or loosen, gaze will be uncontroll
 
 Diagnosis requires a specialist. Because this is a rare condition, measurement methodology is manual, not standardized, and varies between ophthalmologists. Therefore, it is prone to error.
 
-This repository includes browser-based software to detect deviation in one eye. It compares pupil location across their full range of motion. But if the head moves during measurement, that may be detected as pupil deviation. Therefore current facial detection projects are inadequate, because they may detect pupils or faces, but not both.
+This repository includes browser-based software to measure deviation in one eye. It compares pupil location across their full range of motion. But if the head moves during measurement, that may be detected as pupil deviation. Therefore current facial detection projects are inadequate, because they may detect pupils or faces, but not both.
 
 <img align="right" width="40%" src="" alt="Animation">
 
