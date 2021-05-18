@@ -15,22 +15,20 @@
 </p>
 
 ## About
-<img align="right" width="40%" src="https://i.imgur.com/KBu69Ng.png" alt="Animation">
+<img align="right" width="40%" src="" alt="Animation">
 
+## Setup
+1. Serve current directory:
+```bash
+ruby -run -e httpd . -p "${1:-8080}"
+```
 
-## Installation
-1.
+2. Open localhost in Chrome:
+```bash
+open -a "Google Chrome" http://localhost:8080
+```
 
-2.
-
-3.
-
-## Demo
-1.
-
-2.
-
-3.
+3. Demo should look like xxx. Follow on-screen instructions.
 
 ## Notes
 - Problems:
@@ -65,5 +63,11 @@ Problems encountered and how you solved them. A very important one, in my person
 The latter two points are very important. I've often encountered a similar situation or problem - sometimes in a completely different project - and thought "hmm, I remember spending a day on this, but what was the solution again?"
 
 ## Acknowledgements
-- [INSERT FIRST LAST](INSERT URL) for her [INSERT project name]INSERT (PROJECT URL])
-- [INSERT FIRST LAST](URL) for his [INSERT project name](INSERT PROJECT URL])
+- [Tensorflow.js team](https://github.com/tensorflow/tfjs) and [Vincent Mühler](https://github.com/justadudewhohacks) for [face-api.js](https://github.com/justadudewhohacks/face-api.js)
+
+- [Davis King](https://github.com/davisking) for [dlib-models](https://github.com/davisking/dlib-models)
+
+- [Nenad Markuš](https://github.com/nenadmarkus) for [picojs](https://github.com/nenadmarkus/picojs)
+
+- [Claudio Brandolino](https://github.com/cbrandolino) for [camvas](https://github.com/cbrandolino/camvas)
+
