@@ -15,7 +15,7 @@
 </p>
 
 ## About
-⚠️ For Investigational Use Only. The performance characteristics of this product have not been established.
+⚠️ For Investigational Use Only. The performance characteristics of this product have not been established. ⚠️
 
 If eye tendons tighten or loosen, gaze will be uncontrollable. This is called Brown's syndrome, and often afflicts only one eye. If the distance between pupils varies, it's likely the individual is afflicted with this condition.
 
