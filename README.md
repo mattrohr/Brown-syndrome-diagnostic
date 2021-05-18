@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-<b>INSERT PROJECT TAGLINE</b>
+<b>Detect asynchronous eye movement</b>
 </p>
 
 <p align="center">
@@ -15,6 +15,18 @@
 </p>
 
 ## About
+For Investigational Use Only. The performance characteristics of this product have not been established.
+
+If eye tendons tighten or loosen, gaze will be uncontrollable. This is called Brown's syndrome, and often afflicts only one eye. If the distance between pupils varies, it's likely the individual is afflicted with this condition.
+
+Current diagnostic methods are manual and prone to error, require a specialist. Also, because this is a rare condition, measurement methodology is not standardized and varies between ophthalmologists.
+
+This tool automates the diagnostic process. It compares pupil location across their full range of motion. But if the head moves during measurement, that may be detected as pupil deviation. Therefore current facial detection projects are inadequate, because they may do one of these, but not both.
+
+Since only one eye is afflicted in 90% of cases, a reasonable diagnostic method would measure eye deviation would measure one diagnostic approach is to measure eye deviation. 
+
+This repository includes browser-based software to detect deviation in one eye. 
+
 <img align="right" width="40%" src="" alt="Animation">
 
 ## Setup
