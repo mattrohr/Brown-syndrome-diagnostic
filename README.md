@@ -26,6 +26,7 @@ This repository includes browser-based software to measure deviation in one eye.
 [Interactive Demo](https://eye.mattrohr.com) (use desktop Chrome)
 
 If this is helpful in your work, please cite:
+
     @misc{rohr2021brownsyndromediagnostic,
       author = {Matthew Rohr},
       title = {Brown Syndrome Diagnostic},
