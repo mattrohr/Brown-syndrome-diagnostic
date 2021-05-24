@@ -1,4 +1,8 @@
 <p align="center">
+<img width="75%" src="https://i.imgur.com/DgqglJK.png" alt="Banner">
+</p>
+
+<p align="center">
 <b>Detect asynchronous eye movement</b>
 </p>
 
@@ -11,9 +15,11 @@
 
 If inflammation causes eye tendons to tighten or loosen, gaze will be uncontrollable. This is called Brown's syndrome, and often afflicts only one eye.
 
-
-
-Diagnosis requires a specialist. Measurement methodology varies between a simple ruler held between the eyes to a [prism cover test](https://upload.wikimedia.org/wikipedia/commons/8/81/Prism_Cover_Test.webm) (see 2:33). Both are susceptible to human error. In the case of the prism cover test, imagine an energetic 5-year old patient holding a ruler exactly 33 [centimeters] away from their face, while they have the anxiety of having a life altering condition, while some stranger rubs plastic rods on their eye. It's the 18th century equivalent of simultaneously rubbing your tummy and patting your head, but if you or your partner loses, you go blind. Also keep in mind, Brown's syndrome is a rare condition which most technicians will never see in their career, so chances are likely they don't know what they're looking for or misinterpret measurements. If deviation could be passively measured, it would remove these sources of human error.
+Diagnosis requires a specialist. Measurement methodology varies between a simple ruler held between the eyes to a [prism cover test](https://upload.wikimedia.org/wikipedia/commons/8/81/Prism_Cover_Test.webm) (see 2:33). Both are susceptible to human error. In the case of the prism cover test, imagine an energetic 5-year old patient holding a ruler exactly 33 [centimeters] away from their face, while they have the anxiety of having a life altering condition, while some stranger rubs plastic rods on their eye. It's the 18th century equivalent of simultaneously rubbing your tummy and patting your head, but if you or your partner loses, you go blind. Also keep in mind:
+    - Brown's syndrome is a rare condition which most technicians will never see in their career, so chances are likely they don't know what they're looking for or misinterpret measurements,
+    - Measurements is only of one eye at a time,
+    - Subjective measurement, and varies between specialists.
+If deviation could be  measure both eyes passively, continuously, and without specialized tools, it could reduce human error and result in quicker, more accurate diagnosis. This may have wider potential for measuring general forms called strabismus.
 
 This repository includes browser-based software to measure deviation in one eye. It compares locations pupil separation across their full range of motion, and detects if there's head that would invalidate the pupil measurement. Current facial detection projects are inadequate because they may locate either pupil or other facial landmarks, but not both.
 
