@@ -26,13 +26,13 @@ This repository includes browser-based software to measure deviation in one eye.
 [Interactive Demo](https://eye.mattrohr.com) (use desktop Chrome)
 
 If this is helpful in your work, please cite:
-  @misc{rohr2021brownsyndromediagnostic,
-    author = {Matthew Rohr},
-    title = {Brown Syndrome Diagnostic},
-    year = {2021},
-    howpublished = {\url{https://github.com/mattrohr/Brown-syndrome-diagnostic}},
-    note = {commit xxxxxxx}
-  }
+    @misc{rohr2021brownsyndromediagnostic,
+      author = {Matthew Rohr},
+      title = {Brown Syndrome Diagnostic},
+      year = {2021},
+      howpublished = {\url{https://github.com/mattrohr/Brown-syndrome-diagnostic}},
+      note = {commit xxxxxxx}
+    }
 
 ## Setup
 1. Serve current directory on localhost:
