@@ -7,16 +7,16 @@
 </p>
 
 <p align="center">
-<a href="https://eye.mattrohr.com"><img src="https://img.shields.io/github/deployments/mattrohr/Browns-syndrome-diagnostic/github-pages?label=deploy" alt="Deploy Status Badge"></a>
+<a href="https://eye.mattrohr.com"><img src="https://img.shields.io/github/deployments/mattrohr/Brown-syndrome-diagnostic/github-pages?label=deploy" alt="Deploy Status Badge"></a>
 </p>
 
 ## About
 ⚠️ For Investigational Use Only. The performance characteristics of this product have not been established. ⚠️
 
-If inflammation causes eye tendons to tighten or loosen, gaze will be uncontrollable. This is called Brown's syndrome, and often afflicts only one eye.
+If inflammation causes eye tendons to tighten or loosen, gaze will be uncontrollable. This is called Brown syndrome, and often afflicts only one eye.
 
 Diagnosis requires a specialist. Measurement methodology varies between a simple ruler held between the eyes to a [prism cover test](https://upload.wikimedia.org/wikipedia/commons/8/81/Prism_Cover_Test.webm) (see 2:33). Both are susceptible to human error. In the case of the prism cover test, imagine an energetic 5-year old patient holding a ruler exactly 33 [centimeters] away from their face, while they have the anxiety of having a life altering condition, while some stranger rubs plastic rods on their eye. It's the 18th century equivalent of simultaneously rubbing your tummy and patting your head, but if you or your partner loses, you go blind. Also keep in mind:
-    - Brown's syndrome is a rare condition which most technicians will never see in their career, so it's possible they don't know what they're looking for or misinterpret measurements,
+    - Brown syndrome is a rare condition which most technicians will never see in their career, so it's possible they don't know what they're looking for or misinterpret measurements,
     - Measurements is only of one eye at a time,
     - Subjective measurement, and varies between specialists.
 If deviation could be  measure both eyes passively, continuously, and without specialized tools, it could reduce human error and result in quicker, more accurate diagnosis. This may have wider potential for measuring general forms called strabismus.
@@ -38,7 +38,7 @@ open -a "Google Chrome" http://localhost:8080
 
 3. Follow on-screen instructions. Demo should look like animation above.
 
-4. (_optional_) On a secondary device, run simulated Brown's syndrome face.
+4. (_optional_) On a secondary device, [visit facial simulation webpage](simultedface.mattrohr.com) or run it locally:
 ```bash
 python src/animate-face.py
 ```
