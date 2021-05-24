@@ -16,12 +16,12 @@
 If inflammation causes eye tendons to tighten or loosen, gaze will be uncontrollable. This is called Brown's syndrome, and often afflicts only one eye.
 
 Diagnosis requires a specialist. Measurement methodology varies between a simple ruler held between the eyes to a [prism cover test](https://upload.wikimedia.org/wikipedia/commons/8/81/Prism_Cover_Test.webm) (see 2:33). Both are susceptible to human error. In the case of the prism cover test, imagine an energetic 5-year old patient holding a ruler exactly 33 [centimeters] away from their face, while they have the anxiety of having a life altering condition, while some stranger rubs plastic rods on their eye. It's the 18th century equivalent of simultaneously rubbing your tummy and patting your head, but if you or your partner loses, you go blind. Also keep in mind:
-    - Brown's syndrome is a rare condition which most technicians will never see in their career, so chances are likely they don't know what they're looking for or misinterpret measurements,
+    - Brown's syndrome is a rare condition which most technicians will never see in their career, so it's possible they don't know what they're looking for or misinterpret measurements,
     - Measurements is only of one eye at a time,
     - Subjective measurement, and varies between specialists.
 If deviation could be  measure both eyes passively, continuously, and without specialized tools, it could reduce human error and result in quicker, more accurate diagnosis. This may have wider potential for measuring general forms called strabismus.
 
-This repository includes browser-based software to measure deviation in one eye. It compares locations pupil separation across their full range of motion, and detects if there's head that would invalidate the pupil measurement. Current facial detection projects are inadequate because they may locate either pupil or other facial landmarks, but not both.
+This repository includes browser-based software to measure deviation in one eye. It compares locations pupil separation across their full range of motion, and detects if there's head movement that would invalidate the pupil measurement. Current facial detection projects are inadequate because they may locate either pupil or other facial landmarks, but not both.
 
 [Interactive Demo](https://eye.mattrohr.com) (use desktop Chrome)
 
@@ -38,10 +38,16 @@ open -a "Google Chrome" http://localhost:8080
 
 3. Follow on-screen instructions. Demo should look like animation above.
 
+4. (_optional_) On a secondary device, run simulated Brown's syndrome face.
+```bash
+python src/animate-face.py
+```
+
 ## Notes
 - Design Considerations
-    - Language selection: JavaScript ???
-    - Method 
+    - Language selection: JavaScript, Python OpenCV, Matlab, Swift/Kotlin
+    - Method: ML vs violet
+
 - Problems:
     - Convert pixels to distance with fiducial
     - Landmark separation displayed even when
@@ -52,6 +58,8 @@ open -a "Google Chrome" http://localhost:8080
     -  You can ensure pupils are tracked as you look away by recording your screen. You may also present pictures from your mobile device (e.g. <a href="https://www.google.com/search?q=brown+syndrome&client=safari&rls=en&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi6gIiZmazwAhWXQs0KHW-PAf4Q_AUoAXoECAEQAw&biw=1536&bih=880">search images</a>). 
     - how to test accuracy for rare disease? Scrap images of people --> 
 
+- Future Directions
+    - Since developing this project, [Ann Yuan](https://twitter.com/wakoan) and [Andrey Vakunov](https://twitter.com/GreenBeanDou) on Google's Tensorflow.js team [integrated pupil detection and facial landmark detection]([https://blog.tensorflow.org/2020/11/iris-landmark-tracking-in-browser-with-MediaPipe-and-TensorFlowJS.html). Tradeoffs. It's slower than our iris tracking. But landmark and pupil seem to occur at the same rate. Seems to be a lot more false positives.  More testing needed.
 ## Acknowledgements
 - [Tensorflow.js team](https://github.com/tensorflow/tfjs) and [Vincent Mühler](https://github.com/justadudewhohacks) for [face-api.js](https://github.com/justadudewhohacks/face-api.js)
 
