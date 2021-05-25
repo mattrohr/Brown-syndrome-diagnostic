@@ -11,7 +11,7 @@ function button_callback() {
     */
     var update_memory = pico.instantiate_detection_memory(5); // we will use the detections of the last 5 frames
     var facefinder_classify_region = function(r, c, s, pixels, ldim) { return -1.0; };
-    var cascadeurl = './facefinder';
+    var cascadeurl = './src/facefinder';
     fetch(cascadeurl).then(function(response) {
         response.arrayBuffer().then(function(buffer) {
             var bytes = new Int8Array(buffer);
@@ -23,7 +23,7 @@ function button_callback() {
         (2) initialize the locate-pupils.js library with a pupil localizer
     */
     var do_puploc = function(r, c, s, nperturbs, pixels, nrows, ncols, ldim) { return [-1.0, -1.0]; };
-    var puplocurl = './puploc.bin'
+    var puplocurl = './src/puploc.bin'
     fetch(puplocurl).then(function(response) {
         response.arrayBuffer().then(function(buffer) {
             var bytes = new Int8Array(buffer);
