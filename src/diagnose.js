@@ -115,12 +115,14 @@ function button_callback() {
                 document.getElementById("pupilDifference").innerHTML = ("pupil difference:", roundedSeparation);
                 blank = blank + ", " + separation;
                 var splitSeparation = blank.split(", ");
+                
+                // First element is empty because blank = [], we append to it, so second element is the initial value.
+                var initalSeparation = splitSeparation[1];
                 maxSeparation = Math.max(...splitSeparation);
-                // Extract second element of separation array. First element is empty because blank = [], and we append to it.
-                var pupilDeviation = Math.abs(splitSeparation[1] - maxSeparation);
-                console.log(splitSeparation[1])
+                var maxPupilDeviation = Math.abs(initalSeparation - maxSeparation);
+                console.log(initalSeparation)
                 console.log(maxSeparation)
-                var roundedPupilSeparation = [pupilDeviation.toFixed(0)];
+                var roundedMaxPupilSeparation = [maxPupilDeviation.toFixed(0)];
                 document.getElementById("roundedPupilSeparation").innerHTML = roundedPupilSeparation;
                 // subtract current separation from extracted value to determine if it varies
             }
