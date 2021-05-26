@@ -48,7 +48,7 @@ open -a "Google Chrome" http://localhost:8080
 
 3. Follow on-screen instructions. Demo should look like animation above.
 
-4. (_optional_) On a secondary device, [visit facial simulation webpage](./data/animated-face.mp4) or run it locally:
+4. (_optional_) On a secondary device, [visit download facial simulation](https://github.com/mattrohr/Brown-syndrome-diagnostic/blob/main/data/animated-face.mp4?raw=true) or run it locally:
 ```bash
 python src/animate-face.py
 ```
