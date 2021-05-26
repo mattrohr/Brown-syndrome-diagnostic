@@ -48,7 +48,7 @@ open -a "Google Chrome" http://localhost:8080
 
 3. Follow on-screen instructions. Demo should look like animation above.
 
-4. (_optional_) On a secondary device, [visit facial simulation webpage](simultedface.mattrohr.com) or run it locally:
+4. (_optional_) On a secondary device, [visit facial simulation webpage](./data/animated-face.mp4) or run it locally:
 ```bash
 python src/animate-face.py
 ```
@@ -78,3 +78,5 @@ python src/animate-face.py
 - [Nenad Markuš](https://github.com/nenadmarkus) for [picojs](https://github.com/nenadmarkus/picojs)
 
 - [Claudio Brandolino](https://github.com/cbrandolino) for [camvas](https://github.com/cbrandolino/camvas)
+
+- [Frederic Pighin et al.] for [Synthesizing Realistic Faces](http://grail.cs.washington.edu/projects/realface/)
