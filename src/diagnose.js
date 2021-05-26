@@ -119,6 +119,7 @@ function button_callback() {
                 // Extract second element of separation array. First element is empty because blank = [], and we append to it.
                 var pupilDeviation = Math.abs(splitSeparation[1] - maxSeparation);
                 console.log(splitSeparation[1])
+                console.log(maxSeparation)
                 var roundedPupilSeparation = [pupilDeviation.toFixed(0)];
                 document.getElementById("roundedPupilSeparation").innerHTML = roundedPupilSeparation;
                 // subtract current separation from extracted value to determine if it varies
